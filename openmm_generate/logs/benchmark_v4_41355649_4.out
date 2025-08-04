@@ -1,0 +1,19 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=1, batch_index=4, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=1, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test_v4', input_dir=None, gpus=None, timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['432D']
+Processing 432D
+  432D ok (6.9082 seconds)
+Simulating 432D on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	409	0:00
+30.0%	300	430	0:00
+40.0%	400	435	0:00
+50.0%	500	428	0:00
+60.0%	600	431	0:00
+70.0%	700	429	0:00
+80.0%	800	429	0:00
+90.0%	900	432	0:00
+100.0%	1000	431	0:00
+  432D ok (14.3713 seconds)
+Finished 1 in 25.451 seconds

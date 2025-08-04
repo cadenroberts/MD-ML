@@ -1,0 +1,19 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=1, batch_index=6, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=1, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test_v4', input_dir=None, gpus=None, timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['4OCB']
+Processing 4OCB
+  4OCB ok (6.1022 seconds)
+Simulating 4OCB on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	463	0:00
+30.0%	300	444	0:00
+40.0%	400	452	0:00
+50.0%	500	450	0:00
+60.0%	600	448	0:00
+70.0%	700	452	0:00
+80.0%	800	449	0:00
+90.0%	900	443	0:00
+100.0%	1000	442	0:00
+  4OCB ok (14.1476 seconds)
+Finished 1 in 24.7794 seconds

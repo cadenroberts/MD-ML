@@ -1,0 +1,5 @@
+20k Protein Prompt:
+Total Number of Non-polymer Instances = 0 AND Refinement Resolution <= 2.5 AND Number of Distinct Protein Entities > 0 AND Total Number of Polymer Instances (Chains) > 0 AND Deposited Model Count = 1
+
+Small 2-5 chain prompt:
+Total Number of Polymer Instances (Chains) = [ 2 - 6 ] AND Number of Distinct Protein Entities = [ 2 - 6 ] AND Number of Distinct Non-polymer Entities = 0 AND Refinement Resolution <= 2.5

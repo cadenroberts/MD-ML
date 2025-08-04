@@ -1,0 +1,7 @@
+bond_d0:
+  scale: 100.0
+angle_theta0:
+  scale: 100.0
+dihedral_phi0:
+  scale: 100.0
+  angle_wrap: True

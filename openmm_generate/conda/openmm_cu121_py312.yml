@@ -1,0 +1,11 @@
+name: openmm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - cuda-toolkit==12.1.1
+  - openff-toolkit
+  - openmm
+  - openmmforcefields
+  - pdbfixer
+  - h5py

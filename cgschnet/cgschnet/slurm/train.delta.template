@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -A bbpa-delta-gpu
+#SBATCH --partition=gpuA100x4
+#SBATCH --mail-user=TEMPLATE_SLURM_EMAIL
+#SBATCH --mail-type=ALL
+#SBATCH -t TEMPLATE_SLURM_TIMEOUT
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH -c 64
+#SBATCH --gpus-per-task=4
+#SBATCH --job-name=TEMPLATE_SLURM_JOB_NAME
+
+# Partition: https://docs.ncsa.illinois.edu/systems/delta/en/latest/user_guide/running_jobs.html#partitions-queues
+# The partition could be gpuA40x4 (cost=0.5) gpuA100x4 (cost=1.0) gpuA100x8 (cost=1.5)
+
+#FIXME: How many threads does train.py need? Also change the -c above
+export OMP_NUM_THREADS=32
+
+export TQDM_MININTERVAL=30
+export TQDM_BAR_FORMAT="{desc}: {percentage:3.0f}% ({n_fmt}/{total_fmt}) ({elapsed}<{remaining}, {rate_fmt}{postfix})"
+
+# Train command:

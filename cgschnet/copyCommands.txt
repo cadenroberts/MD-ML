@@ -1,0 +1,2 @@
+Batch simulate Majewski Angle
+python batch_simulate.py -m=/u/kbachelor/schnet_models/model_12prot_CA_lj_angleXCX_dihedralX_10k_cutoff3_seq6__wd0_explr1en3_0.85_bs4 -d=/u/kbachelor/protg_training/12prot_CA_lj_angleXCX_dihedralX_10k/protg --output=/u/kbachelor/protg_sims/angle_dihedral -f=pdb --temperature=350

@@ -1,0 +1,70 @@
+
+conf: null
+num_epochs: 1000
+batch_size: 32
+inference_batch_size: 32
+# lr: 0.001
+# lr_patience: 10
+# lr_metric: val_total_mse_loss
+# lr_min: 1.0e-06
+# lr_factor: 0.8
+# lr_warmup_steps: 0
+early_stopping_patience: 10
+reset_trainer: false
+weight_decay: 0.0
+ema_alpha_y: 1.0
+ema_alpha_neg_dy: 1.0
+ngpus: -1
+num_nodes: 1
+precision: 32
+
+splits: null
+train_size: 0.9
+val_size: 0.1
+test_size: null
+test_interval: 20
+save_interval: 10
+seed: 94572
+num_workers: 8
+redirect: false
+gradient_clipping: 0.0
+dataset: Custom
+dataset_root: ~/data
+dataset_arg: null
+
+energy_files: null
+y_weight: 1.0
+neg_dy_weight: 1.0
+model: graph-network
+output_model: Scalar
+prior_model: null
+charge: false
+spin: false
+embedding_dimension: 128
+num_layers: 4
+num_filters: 128
+num_rbf: 64
+hidden_channels: 128
+activation: silu
+rbf_type: expnorm
+trainable_rbf: true
+neighbor_embedding: false
+aggr: add
+distance_influence: both
+attn_activation: silu
+num_heads: 8
+equivariance_invariance_group: O(3)
+derivative: true
+cutoff_lower: 0.0
+cutoff_upper: 15.0
+atom_filter: -1
+max_z: 100
+max_num_neighbors: 32
+standardize: false
+reduce_op: add
+wandb_use: false
+wandb_name: training
+wandb_project: training_
+wandb_resume_from_id: null
+tensorboard_use: false
+prior_args: []

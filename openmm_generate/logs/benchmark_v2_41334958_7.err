@@ -1,0 +1,9 @@
+/var/spool/slurmd/job41337941/slurm_script: line 17: micromamba: command not found
+Traceback (most recent call last):
+  File "scripts/batch_generate.py", line 5, in <module>
+    from module import function
+  File "/global/u1/c/cawrober/openmm_generate/scripts/module/function.py", line 1, in <module>
+    from openmm.app.pdbfile import PDBFile
+ModuleNotFoundError: No module named 'openmm'
+srun: error: nid008345: task 0: Exited with exit code 1
+srun: Terminating StepId=41337941.0

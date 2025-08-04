@@ -1,0 +1,19 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=1, batch_index=1, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=1, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test_v2', input_dir=None, gpus='0', timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['2BNA']
+Processing 2BNA
+  2BNA ok (6.671 seconds)
+Simulating 2BNA on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	493	0:00
+30.0%	300	504	0:00
+40.0%	400	494	0:00
+50.0%	500	491	0:00
+60.0%	600	487	0:00
+70.0%	700	488	0:00
+80.0%	800	492	0:00
+90.0%	900	489	0:00
+100.0%	1000	490	0:00
+  2BNA ok (13.1478 seconds)
+Finished 1 in 23.6793 seconds

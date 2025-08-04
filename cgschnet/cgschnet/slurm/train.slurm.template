@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH -A m4229
+#SBATCH -C gpu
+#SBATCH -q regular
+#SBATCH --mail-user=TEMPLATE_SLURM_EMAIL
+#SBATCH --mail-type=ALL
+#SBATCH -t TEMPLATE_SLURM_TIMEOUT
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH -c 32
+#SBATCH --gpus-per-task=4
+#SBATCH --job-name=TEMPLATE_SLURM_JOB_NAME
+
+# nodes mean number of nodes NODES NODELIST(REASON) ex  4 gpub[020,030,035,038]
+# -N is the number of nodes to run on
+# -n is the number of tasks to run per node
+# -c is CPUs per task
+
+#FIXME: How many threads does train.py need? Also change the -c above
+export OMP_NUM_THREADS=32
+
+export TQDM_MININTERVAL=30
+export TQDM_BAR_FORMAT="{desc}: {percentage:3.0f}% ({n_fmt}/{total_fmt}) ({elapsed}<{remaining}, {rate_fmt}{postfix})"
+
+# Train command:

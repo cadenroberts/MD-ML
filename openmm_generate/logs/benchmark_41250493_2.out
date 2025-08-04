@@ -1,0 +1,19 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=4, batch_index=2, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=4, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test', input_dir=None, gpus='0,1,2,3', timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['1KX5']
+Processing 1KX5
+  1KX5 ok (129.8693 seconds)
+Simulating 1KX5 on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	23.9	0:05
+30.0%	300	23.3	0:05
+40.0%	400	23.7	0:04
+50.0%	500	23.2	0:03
+60.0%	600	23.4	0:02
+70.0%	700	23.7	0:02
+80.0%	800	23.4	0:01
+90.0%	900	23.5	0:00
+100.0%	1000	23.5	0:00
+  1KX5 ok (534.6846 seconds)
+Finished 1 in 669.1965 seconds

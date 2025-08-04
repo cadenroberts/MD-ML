@@ -1,0 +1,5 @@
+Trying to select some interesting proteins to train on:
+QUERY: Total Number of Non-polymer Instances = 0 AND Total Number of Polymer Instances (Chains) = 1 AND Number of Distinct Protein Entities = 1 AND Number of Unmodeled Polymer Residues per Assembly = 0 AND Deposited Model Count = 1 AND Number of Polymer Instances (Chains) per Assembly = 1 AND Refinement Resolution <= 2.5
+
+
+

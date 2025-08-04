@@ -1,0 +1,29 @@
+name: torchmdnet2_cu121_py311
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - acellera        # For moleculekit
+dependencies:
+  - mdtraj
+  - moleculekit
+  - pip
+  - python=3.11
+  - pytorch-cuda=12.1
+  - pytorch-gpu=2.1.2
+  - seaborn
+  - scikit-learn
+  - torchmd=1.0.2
+  - torchmd-net=2.0.0
+  - cuda-nvcc
+  - jax             # For force aggregation (Kramer 2023)
+  - jaxlib==0.4.23  # For force aggregation (Kramer 2023)
+  - transformers    # For ProtTrans (Elnaggar 2022)
+  - sentencepiece   # For ProtTrans (Elnaggar 2022)
+  - ipykernel       # For vscode
+  - plotly          # For analysis
+  - ipywidgets      # For analysis
+  - nbformat        # For analysis
+  - nglview=3.0.8   # For analysis
+  - pip:
+    - git+https://github.com/noegroup/aggforce.git@39ffb14f0a9a682e167af4b7d1cfb138afe3e1ca # For force aggregation (Kramer 2023)

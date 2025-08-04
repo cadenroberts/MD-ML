@@ -1,0 +1,51 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=4, batch_index=1, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=4, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test', input_dir=None, gpus='0,1,2,3', timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['2H8E', '1D92', '1DA1', '1OK7']
+Processing 1D92
+  1D92 ok (6.3265 seconds)
+Simulating 1D92 on gpu 1
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	434	0:00
+30.0%	300	418	0:00
+40.0%	400	421	0:00
+50.0%	500	428	0:00
+60.0%	600	430	0:00
+70.0%	700	434	0:00
+80.0%	800	433	0:00
+90.0%	900	434	0:00
+100.0%	1000	434	0:00
+Processing 2H8E
+  2H8E ok (11.1617 seconds)
+Simulating 2H8E on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	293	0:00
+30.0%	300	286	0:00
+40.0%	400	286	0:00
+50.0%	500	291	0:00
+60.0%	600	286	0:00
+70.0%	700	285	0:00
+80.0%	800	283	0:00
+90.0%	900	285	0:00
+100.0%	1000	285	0:00
+Processing 1OK7
+  1OK7 ok (21.2304 seconds)
+Simulating 1OK7 on gpu 3
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	106	0:01
+30.0%	300	114	0:01
+40.0%	400	117	0:00
+50.0%	500	119	0:00
+60.0%	600	121	0:00
+70.0%	700	121	0:00
+80.0%	800	122	0:00
+90.0%	900	121	0:00
+100.0%	1000	121	0:00
+  1D92 ok (12.0401 seconds)
+  2H8E ok (26.7645 seconds)
+  1OK7 ok (87.8463 seconds)
+Processing 1DA1
+  1DA1 error (4.9143 seconds)
+Finished 4 in 114.2129 seconds

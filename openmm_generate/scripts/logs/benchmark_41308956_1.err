@@ -1,0 +1,4 @@
+/var/spool/slurmd/job41308969/slurm_script: line 17: micromamba: command not found
+/global/u1/c/cawrober/micromamba_root/envs/openmm/bin/python3: can't open file '/global/u1/c/cawrober/openmm_generate/scripts/scripts/batch_generate.py': [Errno 2] No such file or directory
+srun: error: nid002969: task 0: Exited with exit code 2
+srun: Terminating StepId=41308969.0

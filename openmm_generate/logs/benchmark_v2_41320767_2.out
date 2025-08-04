@@ -1,0 +1,19 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=1, batch_index=2, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=1, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test_v2', input_dir=None, gpus='0', timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['3BSE']
+Processing 3BSE
+  3BSE ok (11.5231 seconds)
+Simulating 3BSE on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	256	0:00
+30.0%	300	264	0:00
+40.0%	400	260	0:00
+50.0%	500	264	0:00
+60.0%	600	265	0:00
+70.0%	700	263	0:00
+80.0%	800	265	0:00
+90.0%	900	264	0:00
+100.0%	1000	265	0:00
+  3BSE ok (30.5995 seconds)
+Finished 1 in 45.9671 seconds

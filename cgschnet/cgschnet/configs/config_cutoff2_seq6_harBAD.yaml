@@ -1,0 +1,36 @@
+
+precision: 32
+
+energy_files: null
+y_weight: 1.0
+neg_dy_weight: 1.0
+model: graph-network-ext
+output_model: Scalar
+prior_model: null
+charge: false
+spin: false
+embedding_dimension: 128
+num_layers: 4
+num_rbf: 20
+activation: silu
+rbf_type: expnorm
+trainable_rbf: true
+neighbor_embedding: false
+sequence_basis_radius: 6
+aggr: add
+distance_influence: both
+attn_activation: silu
+num_heads: 8
+equivariance_invariance_group: O(3)
+derivative: true
+cutoff_lower: 2.0
+cutoff_upper: 12.0
+atom_filter: -1
+max_z: 100
+max_num_neighbors: 32
+standardize: false
+reduce_op: add
+prior_args: []
+
+harmonic_net: true
+harmonic_net_terms: ["bonds", "angles", "dihedrals"]

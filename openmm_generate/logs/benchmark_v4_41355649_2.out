@@ -1,0 +1,6 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=1, batch_index=2, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=1, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test_v4', input_dir=None, gpus=None, timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['1DA1']
+Processing 1DA1
+  1DA1 error (3.467 seconds)
+Finished 1 in 8.2227 seconds

@@ -1,0 +1,19 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=1, batch_index=7, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=1, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test_v4', input_dir=None, gpus=None, timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['6BST']
+Processing 6BST
+  6BST ok (4.7036 seconds)
+Simulating 6BST on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	615	0:00
+30.0%	300	600	0:00
+40.0%	400	607	0:00
+50.0%	500	606	0:00
+60.0%	600	610	0:00
+70.0%	700	611	0:00
+80.0%	800	613	0:00
+90.0%	900	613	0:00
+100.0%	1000	611	0:00
+  6BST ok (8.4498 seconds)
+Finished 1 in 17.6802 seconds

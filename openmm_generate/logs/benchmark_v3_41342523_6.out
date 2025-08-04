@@ -1,0 +1,35 @@
+
+'micromamba' is running as a subprocess and can't modify the parent shell.
+Thus you must initialize your shell before using activate and deactivate.
+
+To initialize the current bash shell, run:
+    $ eval "$(micromamba shell hook --shell bash)"
+and then activate or deactivate with:
+    $ micromamba activate
+To automatically initialize all future (bash) shells, run:
+    $ micromamba shell init --shell bash --root-prefix=~/.local/share/mamba
+If your shell was already initialized, reinitialize your shell with:
+    $ micromamba shell reinit --shell bash
+Otherwise, this may be an issue. In the meantime you can run commands. See:
+    $ micromamba run --help
+
+Supported shells are {bash, zsh, csh, posix, xonsh, cmd.exe, powershell, fish, nu}.
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=1, batch_index=6, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=1, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test_v3', input_dir=None, gpus='0', timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['1IHF']
+Processing 1IHF
+  1IHF ok (15.2209 seconds)
+Simulating 1IHF on gpu 0
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	178	0:00
+30.0%	300	176	0:00
+40.0%	400	180	0:00
+50.0%	500	183	0:00
+60.0%	600	182	0:00
+70.0%	700	182	0:00
+80.0%	800	182	0:00
+90.0%	900	182	0:00
+100.0%	1000	184	0:00
+  1IHF ok (44.1747 seconds)
+Finished 1 in 65.8614 seconds

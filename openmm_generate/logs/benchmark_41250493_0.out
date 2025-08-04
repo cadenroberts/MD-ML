@@ -1,0 +1,50 @@
+Namespace(pdbid_list=['scripts/benchmark_pdbs.json'], batch_size=4, batch_index=0, force=False, prepare=True, prepare_implicit=False, remove_ligands=True, integrator=None, pool_size=4, steps=1000, report_steps=100, data_dir='/pscratch/sd/c/cawrober/benchmark_test', input_dir=None, gpus='0,1,2,3', timeout=None)
+Taking inputs from list: scripts/benchmark_pdbs.json
+['2QA1', '4R19', '1KCF', '6N65']
+Processing 6N65
+  6N65 ok (8.5663 seconds)
+Simulating 6N65 on gpu 3
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	452	0:00
+30.0%	300	449	0:00
+40.0%	400	456	0:00
+50.0%	500	453	0:00
+60.0%	600	455	0:00
+70.0%	700	456	0:00
+80.0%	800	459	0:00
+90.0%	900	463	0:00
+100.0%	1000	461	0:00
+Processing 4R19
+  4R19 ok (27.6373 seconds)
+Simulating 4R19 on gpu 1
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	93.5	0:01
+30.0%	300	102	0:01
+40.0%	400	106	0:00
+50.0%	500	106	0:00
+60.0%	600	108	0:00
+70.0%	700	108	0:00
+80.0%	800	108	0:00
+90.0%	900	107	0:00
+100.0%	1000	107	0:00
+Processing 1KCF
+  1KCF ok (28.8087 seconds)
+Simulating 1KCF on gpu 2
+#"Progress (%)"	"Step"	"Speed (ns/day)"	"Time Remaining"
+10.0%	100	0	--
+20.0%	200	85.3	0:01
+30.0%	300	91.3	0:01
+40.0%	400	91.9	0:01
+50.0%	500	93.6	0:00
+60.0%	600	93.9	0:00
+70.0%	700	91.7	0:00
+80.0%	800	92.6	0:00
+90.0%	900	92.5	0:00
+100.0%	1000	92.4	0:00
+Skipping prepare 2QA1 (already prepared)
+Skipping 2QA1 (already finished)
+  6N65 ok (14.9358 seconds)
+  4R19 ok (114.3823 seconds)
+Finished 4 in 151.8516 seconds
