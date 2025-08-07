@@ -31,3 +31,6 @@ done
 
 # Output JSON array
 echo "[${remaining_ids[*]}]"
+
+count=${#remaining_ids[@]}
+echo "Total valid PDBs: $count"
