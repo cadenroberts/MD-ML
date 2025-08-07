@@ -7,15 +7,15 @@ for dir in $PSCRATCH/benchmark_test_v5/*; do
     # Case 1: simulation/ is empty
     if [ -d "$sim_dir" ] && [ -z "$(ls -A "$sim_dir")" ]; then
         echo "Removing $dir (empty simulation/)"
-        # rm -r "$dir"
+        rm -r "$dir"
         continue
     fi
 
     # Case 2: final_state.pdb exists but doesn't contain DNA
     if [ -f "$pdb_file" ]; then
-        if ! grep -E '\s(D[ATGC]|[ATGC])\s' "$pdb_file" > /dev/null; then
+        if ! awk '$1 == "ATOM" && $4 ~ /^D[ATGC]$/ { found=1 } END { exit !found }' "$pdb_file"; then
             echo "Removing $dir (no DNA in final_state.pdb)"
-            # rm -r "$dir"
+            rm -r "$dir"
         fi
     fi
 done
